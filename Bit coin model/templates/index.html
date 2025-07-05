@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tesla Stock Predictor</title>
+</head>
+<body>
+    <h2>Enter Tesla Stock Data</h2>
+    <form action="/predict" method="post">
+        Open Price: <input type="text" name="open"><br>
+        Close Price: <input type="text" name="close"><br>
+        High Price: <input type="text" name="high"><br>
+        Low Price: <input type="text" name="low"><br>
+        Month (1-12): <input type="text" name="month"><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
